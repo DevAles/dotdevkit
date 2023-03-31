@@ -1,0 +1,72 @@
+$primaryColor: #33265e;
+$secondaryColor: #88882e;
+$tertiaryColor: #060606;
+
+body {
+    background: -webkit-linear-gradient(left, $primaryColor, $secondaryColor);
+    background: -o-linear-gradient(right, $primaryColor, $secondaryColor);
+    background: -moz-linear-gradient(right, $primaryColor, $secondaryColor);
+    background: linear-gradient(to right, $primaryColor, $secondaryColor);
+}
+
+#firstSection {
+    display: flex;
+    align-items: center;
+    width: 99vw;
+    height: 90vh;
+}
+
+#firstSection > #firstTextArea {
+    width: 20%;
+    margin-left: 2%;
+    font-family: Roboto, sans-serif;
+    font-size: 24pt;
+    color: #fff;
+    line-height: 1.2;
+}
+
+#firstTextArea > h1 {
+    font-weight: normal;
+}
+
+#firstTextArea > h1 > span {
+    text-decoration: underline $secondaryColor 2px solid;
+    font-weight: bold;
+}
+
+#firstSection > #firstVideoArea {
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#firstVideoArea > #demoVideo {
+    height: 20%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+#secondSection > #firstButtonArea {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+#firstButtonArea > .actionButton {
+    width: 20%;
+    height: 60%;
+    background-color: $tertiaryColor;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 18pt;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+.actionButton:hover {
+    text-shadow: 0 0 10px #fff;
+}
